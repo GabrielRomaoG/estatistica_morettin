@@ -1,1 +1,1 @@
-# estatistica_morettin
+# Anotações do livro Estatística Básica - Morettin
