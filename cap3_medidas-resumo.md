@@ -60,3 +60,20 @@ $$
 
 Uma outlier é uma observação que está acima do Limite Superior ou abaixo do Limite
 inferior.
+
+## 3.6 Transformações
+
+#### O que pode ser feito para tornar distribuições assimétricas em distribuições mais simétricas e perto da normal?
+
+$$
+    \mathbf{x}^{( p )} =
+    \begin{cases}
+        x^p, &\text{ if } p > 0\\
+        \ln( x ), &\text{ if } p = 0\\
+        -x^p, &\text{ if } p < 0\\
+    \end{cases}
+$$
+
+Normalmente se experimenta valores de $p$ na sequência:
+
+$$\dots, -3, -2, -1, -\frac{1}{2}, -\frac{1}{4}, 0, \frac{1}{4}, \frac{1}{2}, 1, 2, \dots$$
