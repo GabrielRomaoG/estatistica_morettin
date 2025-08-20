@@ -64,3 +64,35 @@ $$
 $$
 
 ## 4.6 Associação entre Variáveis Qualitativas e Quantitativas
+
+A ideia aqui é verificar a variância da variável quantitativa em cada categoria,
+caso a variância em cada categoria seja pequena e menor que a global, quer dizer
+que a variável categórica tem certa capacidade de explicar a variância da qualitativa.
+Portanto, há uma relação entre as duas.
+
+$$
+    \overline{var(S)} = \frac{\sum_{i=1}^{k} n_i var_j (S)}{\sum_{i=1}^{k} n_i}
+$$  
+
+sendo k, o número de categorias e $var_i(S)$, a variância de S dentro da categoria i.
+
+utilizando $R^2$:
+
+$$
+    R^2 = \frac{var(S) - \overline{var(S)}}{var(S)} = 1 - \frac{\overline{var(S)}}{var(S)}
+$$
+example:
+![cap4_analise_bidimensional_2025-08-20_15-46-13](assets/imgs/cap4_analise_bidimensional_2025-08-20_15-46-13.png)
+
+$$
+    \overline{var(S)}=\frac{12(7,77) + 18(13,10) + 6(16,89)}{12 + 18 + 6}
+    = 11,96 \\
+    var(S) = 20,46
+$$
+
+$$
+    R^2 = 1- \frac{11,96}{20,46} = 0,415
+$$
+
+dizemos que 41,5% da variação total do salário é explicada pela
+variável grau de instrução.
